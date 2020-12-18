@@ -1,0 +1,137 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    font-family:'Montserrat', Arial, Helvetica, sans-serif;
+    font-size:13px;
+    overflow-x:hidden;
+}
+/*header menu right*/
+header {
+    height:100px;
+    background-color:#EEE;
+    color:black;
+}
+.header {
+    max-width:1440px;
+    height:100px;
+    margin:auto;
+    display:flex;
+    align-items:center;
+}
+.logo img{
+    width:110px;
+    margin-right: 30px;
+}
+.header-menu{
+    display:flex;
+    flex: 1;
+    justify-content: flex-end;
+}
+.header-menu ul,
+.header-menu li {
+    list-style:none;
+}
+.header-menu ul {
+    display:flex;
+}
+.header-menu li a {
+    color:black;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left:10px;
+    padding-right:10px;
+    height:100px;
+    display:flex;
+    align-items:center;
+    border-bottom:5px solid #EEE;
+}
+.header-menu li a:hover {
+    border-bottom:5px solid #F48F51;
+    color:#F48F51;
+}
+/*header menu left*/
+.header-left{
+    display: flex;
+}
+.header-left button{
+    border: 0;
+    background:transparent;
+    margin-left: -30px;
+    cursor: pointer;
+}
+.header-left button img{
+    width: 16px;
+    height: 16px;
+}
+.header-search,
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-search form{
+    display: flex;
+}
+.header-search input{
+    font-size: 16px;
+    padding: 8px 15px;
+    border: 1px solid #999999;
+    outline: 0;
+    width: 100%;
+    max-width: 250px;
+    height: 30px;
+    border-radius: 7px;
+}
+.header-search button{
+    border: 0;
+    background:transparent;
+    margin-left: -30px;
+    cursor: pointer;
+}
+.header-search button img{
+    width: 16px;
+    height: 16px;
+}
+/*slider*/
+.slider{
+    flex: 1;
+    overflow: hidden;
+}
+.slider--width{
+    height: 89.3vh;
+    display:flex;
+    transition: all ease 0.3s;
+}
+.slider--item{
+    width: 100vw;
+    height: inherit;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F48F51;
+    text-shadow: 0px 1px 1px #333;
+    font-size: 50px;
+}
+.slider--controls{
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider--control{
+    width:10px;
+    height: 10px;
+    background-color: #F48F51;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    color: black;
+}
